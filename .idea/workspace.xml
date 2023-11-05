@@ -31,6 +31,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/handwriting_forgery_pytorch" />
       <recent name="$PROJECT_DIR$/handwriting_forgery_pytorch/handwriting_dataset/fake_signatures" />
     </key>
   </component>

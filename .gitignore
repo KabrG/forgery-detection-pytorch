@@ -2,3 +2,5 @@
 /shelf/
 /handwriting_forgery_pytorch/.idea/workspace.xml
 /handwriting_forgery_pytorch/handwriting_dataset/**
+/handwriting_forgery_pytorch/handwriting_dataset/fake_signatures/
+/handwriting_forgery_pytorch/handwriting_dataset/

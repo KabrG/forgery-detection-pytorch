@@ -1,4 +1,4 @@
 # Default ignored files
 /shelf/
-/.idea/workspace.xml
+/handwriting_forgery_pytorch/.idea/workspace.xml
 /handwriting_forgery_pytorch/handwriting_dataset/**

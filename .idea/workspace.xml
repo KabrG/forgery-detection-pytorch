@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bc4f993b-d966-4904-b15e-95d32e683ee2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/forgery-detection-pytorch.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handwriting_forgery_pytorch/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/handwriting_forgery_pytorch/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handwriting_forgery_pytorch/creating_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/handwriting_forgery_pytorch/creating_dataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handwriting_forgery_pytorch/handwriting_dataset.csv" beforeDir="false" afterPath="$PROJECT_DIR$/handwriting_forgery_pytorch/handwriting_dataset.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handwriting_forgery_pytorch/training.py" beforeDir="false" afterPath="$PROJECT_DIR$/handwriting_forgery_pytorch/training.py" afterDir="false" />
-    </list>
+    <list default="true" id="bc4f993b-d966-4904-b15e-95d32e683ee2" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

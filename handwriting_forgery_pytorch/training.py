@@ -12,6 +12,8 @@ import cv2
 import numpy as np
 from PIL import Image
 
+from creating_dataset import CreateDatasetString
+
 # self.data = ["dataset_photos/Screen Shot 2023-10-27 at 19.57.01.png"]  # Replace with entire dataset # Image paths
 # self.label = ["value"]
 
@@ -29,6 +31,7 @@ class CustomDataset(Dataset):
         img_size = (100, 100)  # width, height
         # Img Object
         img = cv2.imread(self.data[idx])
+        print(self.data[idx])
         # Gray Scale
         img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         # Resize
@@ -55,17 +58,15 @@ class CustomDataset(Dataset):
         return num_array, self.labels[idx]
         # Return image and label
 
+
 # Data will have a name with an associated label
-data = ['handwriting_dataset/authentic_signatures/Screen Shot 2023-10-28 at 19.08.57.png', 'handwriting_dataset/authentic_signatures/Screen Shot 2023-10-28 at 18.53.43.png', 'handwriting_dataset/fake_signatures/Screen Shot 2023-10-28 at 20.33.06.png']
-labels = [1, 1, 0]
-# data = ["handwriting_dataset/fake_signatures/Screen Shot 2023-10-28 at 18.53.43.png", 'handwriting_dataset/fake_signatures/Screen Shot 2023-10-28 at 20.33.06.png']
-# labels = [1, 1, 0]
+data, labels = CreateDatasetString()
 
 # Create DataLoader
 dataset = CustomDataset(data, labels)
 data_loader = DataLoader(dataset, batch_size=64, shuffle=True) # returns two arrays: array of 100x100 and labels
 
-training_dataset, labels = dataset[0]
+# training_dataset, labels = dataset[0]
 # print(training_dataset)
 # print(labels)
 # <<<<<<<<<<<<<<<<<<<<< Training >>>>>>>>>>>>>>>>>>>>> #

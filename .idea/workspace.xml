@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc4f993b-d966-4904-b15e-95d32e683ee2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handwriting_forgery_pytorch/creating_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/handwriting_forgery_pytorch/creating_dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handwriting_forgery_pytorch/handwriting_dataset.csv" beforeDir="false" afterPath="$PROJECT_DIR$/handwriting_forgery_pytorch/handwriting_dataset.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handwriting_forgery_pytorch/training.py" beforeDir="false" afterPath="$PROJECT_DIR$/handwriting_forgery_pytorch/training.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,21 +24,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/kabirguron/Documents/forgery-detection-pytorch/handwriting_forgery_pytorch/handwriting_dataset/fake_signatures",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kabirguron/Documents/forgery-detection-pytorch/handwriting_forgery_pytorch/handwriting_dataset/fake_signatures&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/handwriting_forgery_pytorch/handwriting_dataset/fake_signatures" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/handwriting_forgery_pytorch/handwriting_dataset" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/handwriting_forgery_pytorch" />
       <recent name="$PROJECT_DIR$/handwriting_forgery_pytorch/handwriting_dataset/fake_signatures" />
     </key>

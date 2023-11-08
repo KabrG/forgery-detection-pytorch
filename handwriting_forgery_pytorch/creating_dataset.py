@@ -1,8 +1,9 @@
 import csv
 import os
 import cv2
+import sys
 
-def CreateDatasetString():
+def create_dataset_string():
     # Directories
     real_dir = '/Volumes/Lexar/Datasets/Real Handwriting'
     fake_dir ='/Volumes/Lexar/Datasets/Fake Handwriting'
@@ -31,15 +32,35 @@ def CreateDatasetString():
     print("data = ", all_files)
     print("labels = ", all_labels)
 
+
+    class EmptyFileException(Exception):
+        pass
+
     for x in all_files:
         try:
             img = cv2.imread(x)
             print("opened ", x)
-        except:
+            if img is None:
+                print("NONE")
+                raise EmptyFileException("Empty File")
+
+        except EmptyFileException:
+            print("Force Quit")
+            sys.exit(2)
+
+        except cv2.error:
+            print("Force Quit")
+            sys.exit(3)
+
+        except Exception:
+            print("Force Quit")
             print("couldn't open ", x)
+            sys.exit(1)
+    print("Files verified.")
     return all_files, all_labels
 # with open('handwriting_dataset.csv', 'a', newline='') as file:
 #             csvwriter = csv.writer(file)
 #             csvwriter.writerow(("Pixel Array", "Label"))
 #             for i in range(len(all_files)):
 #                 csvwriter.writerow((all_files[i], all_labels[i]))
+# create_dataset_string()

@@ -4,3 +4,5 @@
 /handwriting_forgery_pytorch/handwriting_dataset/**
 /handwriting_forgery_pytorch/handwriting_dataset/fake_signatures/
 /handwriting_forgery_pytorch/handwriting_dataset/
+/handwriting_forgery_pytorch/model_checkpoint.pth
+

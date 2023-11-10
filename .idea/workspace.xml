@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc4f993b-d966-4904-b15e-95d32e683ee2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handwriting_forgery_pytorch/IMG_4926.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handwriting_forgery_pytorch/IMG_4927.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handwriting_forgery_pytorch/IMG_4928.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handwriting_forgery_pytorch/notification_sound.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handwriting_forgery_pytorch/creating_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/handwriting_forgery_pytorch/creating_dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handwriting_forgery_pytorch/irl_testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/handwriting_forgery_pytorch/irl_testing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handwriting_forgery_pytorch/training.py" beforeDir="false" afterPath="$PROJECT_DIR$/handwriting_forgery_pytorch/training.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,8 +47,8 @@
       <recent name="$PROJECT_DIR$/handwriting_forgery_pytorch/handwriting_dataset/fake_signatures" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/handwriting_forgery_pytorch/handwriting_dataset" />
       <recent name="$PROJECT_DIR$/handwriting_forgery_pytorch" />
+      <recent name="$PROJECT_DIR$/handwriting_forgery_pytorch/handwriting_dataset" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/handwriting_forgery_pytorch/handwriting_dataset/fake_signatures" />
     </key>

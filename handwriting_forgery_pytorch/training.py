@@ -1,4 +1,5 @@
 import sys
+import time
 
 import torch
 import torch.nn as nn
@@ -16,6 +17,14 @@ from PIL import Image, ImageFilter
 
 from creating_dataset import create_dataset_string
 
+from playsound import playsound
+
+# Ringtone plays three times once training is done
+def ringtone():
+    for i in range(3):
+        playsound('/Users/kabirguron/Documents/forgery-detection-pytorch/handwriting_forgery_pytorch/notification_sound.mp3')
+        time.sleep(1)
+
 def save_model(model, optimizer):
     checkpoint = {
         'model': model.state_dict(),
@@ -25,7 +34,7 @@ def save_model(model, optimizer):
     torch.save(checkpoint, 'model_checkpoint.pth')
 
 
-def load_model():
+def load_model(model, optimizer):
     checkpoint = torch.load('model_checkpoint.pth')
     model.load_state_dict(checkpoint['model'])
     optimizer.load_state_dict(checkpoint['optimizer'])
@@ -142,6 +151,7 @@ class Net(nn.Module):
 def train(data_loader, model, loss_function, optimizer):
     model.train() # Setting to training mode
     train_loss = 0
+    num_of_batches = len(data_loader)
 
     # (x, y) is (count, element) respectively
     for i, (input_data, target) in enumerate(data_loader):  # X is input, y is actual result.
@@ -158,7 +168,6 @@ def train(data_loader, model, loss_function, optimizer):
         bse.backward()
         optimizer.step() # Update parameters
         # Divide Mean square error
-    num_of_batches = len(data_loader)
     print(f'Number of training batches: {num_of_batches}')
     train_bse = train_loss / num_of_batches
     print(train_bse**(1/2))
@@ -199,17 +208,20 @@ def run_training_program():
     optimizer = torch.optim.Adam(model.parameters(), lr=0.00001) # lr is learning rate
 
     if input("Do you wish to load old model? 'y' for yes.\n").lower() == 'y':
-        load_model()
+        load_model(model, optimizer)
         print("Model loaded.")
 
-    for i in range(30):
+    for i in range(100):
         train(data_loader, model, loss_function, optimizer)
         test(data_loader, model, loss_function)
         print("EPOCH", i+1)
 
+    ringtone() # Alert when training has finished
+
     if input("Do you want to save the current model? 'y' for save.\n").lower() == 'y':
         save_model(model, optimizer)
         print("Model saved.")
+
 run_training_program()
 
 # model = Net().to('cpu')
